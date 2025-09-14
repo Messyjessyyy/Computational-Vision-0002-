@@ -29,7 +29,6 @@ void DisjSets::unionSets( int root1, int root2 )
     }
 }
 
-
 /**
  * Perform a find.
  * Error checks omitted again for simplicity.
@@ -57,3 +56,11 @@ int DisjSets::find( int x )
         return s[ x ] = find( s[ x ] );
 }
 
+
+/**
+ * Returns true if the vector s has no elements
+ */
+
+bool DisjSets::empty(){
+    return (s.size() == 0);
+}
