@@ -28,8 +28,10 @@ class DisjSets
     int find( int x );
     void unionSets( int root1, int root2 );
 
+    bool empty();
+
   private:
-    vector<int> s;
+    vector<int> s; // the set set 
 };
 
 #endif
